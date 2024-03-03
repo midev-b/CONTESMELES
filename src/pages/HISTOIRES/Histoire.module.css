@@ -1,0 +1,16 @@
+.histoiresContainer {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.histoiresContainer div {
+  width: 210px;
+  height: 230px;
+}
+.bookOne {
+  background-color: rgb(137, 31, 98);
+
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}

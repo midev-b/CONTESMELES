@@ -1,0 +1,42 @@
+.accueil h1 {
+  font-family: "Niconne", cursive;
+  color: rgba(243, 216, 38, 0.957);
+  margin: auto;
+  margin-top: 50px;
+}
+.introduction {
+  width: 525px;
+  font-family: "Niconne", cursive;
+  font-size: 22px;
+  letter-spacing: 1px;
+
+  color: rgb(126, 115, 3);
+  margin: auto;
+  /* text-shadow: 0.5px 0.2px 0px rgba(0, 0, 0, 0.762); */
+  background-image: url("/accueil/scroll-paper.png");
+  background-size: 100% 100%;
+  padding: 30px 80px;
+}
+
+.accueil .marqueebirds {
+  position: absolute;
+  width: 100%;
+  left: 00;
+  right: 0;
+  top: 20px;
+}
+.accueil .marqueebirds img {
+  width: 170px;
+}
+
+.accueil .marqueedog img {
+  width: 250px;
+  bottom: 0;
+}
+.accueil .marqueedog {
+  position: absolute;
+
+  left: 160px;
+  right: 50px;
+  bottom: 00;
+}

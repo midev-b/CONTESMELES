@@ -1,0 +1,132 @@
+.container {
+  width: 1120px;
+  height: 600px;
+  position: relative;
+  border: solid 1px black;
+  backface-visibility: hidden;
+}
+
+.imageText {
+  width: 560px;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform-style: preserve-3d;
+  transition: transform 1s ease-in-out;
+  transform-origin: right;
+  /* transform: rotateY(0deg); */
+}
+
+.page1,
+.page2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  border: solid white 4px;
+}
+
+.page2 {
+  transform: rotateY(180deg);
+}
+.backgrd {
+  background-color: rgb(6, 43, 40);
+}
+.backgrd p {
+  height: 80%;
+  line-height: 60px;
+}
+
+.page1 img,
+.page2 img {
+  width: 100%;
+  height: 100%;
+}
+.page1 p,
+.page2 p {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+}
+.page1 button {
+  background-color: rgba(193, 147, 236, 0.889);
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+.page2 button {
+  background-color: rgba(83, 101, 105, 0.915);
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+.flip {
+  transform: rotateY(180deg);
+
+  transition: transform 1s ease;
+  z-index: 44;
+}
+.notFlip:nth-child(1) {
+  z-index: 20;
+}
+.notFlip:nth-child(2) {
+  z-index: 19;
+}
+.notFlip:nth-child(3) {
+  z-index: 18;
+}
+.notFlip:nth-child(4) {
+  z-index: 17;
+}
+.notFlip:nth-child(5) {
+  z-index: 16;
+}
+.notFlip:nth-child(6) {
+  z-index: 15;
+}
+.notFlip:nth-child(7) {
+  z-index: 14;
+}
+.notFlip:nth-child(8) {
+  z-index: 13;
+}
+.notFlip:nth-child(9) {
+  z-index: 12;
+}
+.notFlip:nth-child(10) {
+  z-index: 11;
+}
+.notFlip:nth-child(11) {
+  z-index: 10;
+}
+.notFlip:nth-child(12) {
+  z-index: 9;
+}
+.notFlip:nth-child(13) {
+  z-index: 8;
+}
+.notFlip:nth-child(14) {
+  z-index: 7;
+}
+.notFlip:nth-child(15) {
+  z-index: 6;
+}
+.notFlip:nth-child(16) {
+  z-index: 5;
+}
+.notFlip:nth-child(17) {
+  z-index: 4;
+}
+.notFlip:nth-child(18) {
+  z-index: 3;
+}
+.notFlip:nth-child(19) {
+  z-index: 2;
+}
+.notFlip:nth-child(20) {
+  z-index: 1;
+}

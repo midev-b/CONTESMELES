@@ -1,0 +1,23 @@
+.links {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.link {
+  margin-left: 25px;
+  color: rgb(218, 218, 47);
+  font-family: "Inder", sans-serif;
+  font-size: 18px;
+  font-weight: bolder;
+  letter-spacing: 0.3px;
+  text-shadow: 2px 2px 4px rgba(14, 13, 12, 0.935);
+  padding: 3px;
+}
+.link:hover {
+  box-shadow: 2px 2px 4px rgba(14, 14, 12, 0.935);
+  color: rgb(7, 6, 1);
+
+  text-shadow: 2px 2px 4px rgba(196, 202, 43, 0.935);
+}
