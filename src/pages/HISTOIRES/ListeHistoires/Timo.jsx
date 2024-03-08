@@ -9,16 +9,20 @@ function stringToHTML(htmlString) {
 export function Timo() {
   const [currentIndex, setCurrentIndex] = useState(-1);
   const [isNextClicked, setIsNextClicked] = useState(false);
+  const [isPrevClicked, setIsPrevClicked] = useState(false);
 
   const handleNext = () => {
     setCurrentIndex((prev) => prev + 1);
     setIsNextClicked(true);
+    // setIsPrevClicked(false);
     console.log(currentIndex);
   };
 
   const handlePrevious = () => {
     setCurrentIndex((prev) => prev - 1);
-    setIsNextClicked(false);
+    setIsPrevClicked(true);
+    // setIsNextClicked(false);
+
     console.log(currentIndex);
   };
 
@@ -36,7 +40,8 @@ export function Timo() {
       {text.map((el, i) => (
         <div
           className={`${styles.imageText} ${
-            isNextClicked && (i === currentIndex || i < currentIndex)
+            (isNextClicked && (i === currentIndex || i < currentIndex)) ||
+            (isPrevClicked && (i === currentIndex || i < currentIndex))
               ? styles.flip
               : styles.notFlip
           }`}
